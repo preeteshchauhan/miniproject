@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1270.0" style="-fx-background-color: #2554C7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.Statisticstablecontroller">
+   <children>
+      <TableView fx:id="Stocktableview" layoutX="33.0" layoutY="77.0" prefHeight="625.0" prefWidth="998.0">
+        <columns>
+          <TableColumn fx:id="Companycoloumn" prefWidth="145.60000228881836" text="Company" />
+          <TableColumn fx:id="Weekhigh52coloumn" prefWidth="83.19999694824219" text="52 Week high" />
+            <TableColumn fx:id="Weeklow52coloumn" prefWidth="86.39996337890625" text="52 Week Low" />
+            <TableColumn fx:id="Marketcapcoloumn" prefWidth="72.0" text="Market Cap" />
+            <TableColumn fx:id="Profitearningratiocoloumn" prefWidth="119.20001220703125" text="Profit Earning Ratio" />
+            <TableColumn fx:id="Debtcoloumn" prefWidth="54.4000244140625" text="Debt" />
+            <TableColumn fx:id="Bookvaluecoloumn" prefWidth="75.0" text="Book value" />
+            <TableColumn fx:id="Facevaluecoloumn" prefWidth="97.60003662109375" text="Face value" />
+            <TableColumn fx:id="Noofsharescoloumn" prefWidth="101.5999755859375" text="No of shares" />
+            <TableColumn fx:id="Dividendcoloumn" prefWidth="86.4000244140625" text="Dividend" />
+            <TableColumn fx:id="Cashcoloumn" prefWidth="75.0" text="Cash" />
+        </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="167.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Stock">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="SearchStock" layoutX="333.0" layoutY="39.0" prefHeight="26.0" prefWidth="534.0" promptText="Enter a Nift 50 Stock">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="33.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchTologinpage" prefHeight="47.0" prefWidth="70.0" text="&lt;&lt;&lt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="1114.0" layoutY="69.0" mnemonicParsing="false" onAction="#switchholdingstable" prefHeight="47.0" prefWidth="70.0" text="&gt;&gt;&gt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="1079.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to Holdings ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
