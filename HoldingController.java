@@ -126,6 +126,9 @@ public class HoldingController implements Initializable {
             SortedList<Userholding> sortedData = new SortedList<>(filterData);
 
             sortedData.comparatorProperty().bind(tableView.comparatorProperty());
+            
+            tableView.setItems(sortedData);
+
 
         }catch (SQLException e){
             Logger.getLogger(Statisticstablecontroller.class.getName()).log(Level.SEVERE, null, e);
