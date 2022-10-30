@@ -162,6 +162,9 @@ public class Statisticstablecontroller  implements Initializable {
             SortedList<User> sortedData = new SortedList<>(filterData);
 
             sortedData.comparatorProperty().bind(Stocktableview.comparatorProperty());
+            
+            Stocktableview.setItems(sortedData);
+
 
         }catch (SQLException e){
             Logger.getLogger(Statisticstablecontroller.class.getName()).log(Level.SEVERE, null, e);
